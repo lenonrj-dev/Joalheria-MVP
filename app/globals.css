@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+:root {
+--wine: #8b1631;
+--muted: #f3f1ef;
+}
+
+
+* {
+box-sizing: border-box;
+}
+
+
+html,
+body {
+height: 100%;
+}
