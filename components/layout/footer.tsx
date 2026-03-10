@@ -10,10 +10,10 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-5">
             <h3 className="text-sm font-semibold tracking-wide text-black">
-              Sign up for Emails, Updates & get 10% off
+              Receba novidades e ganhe 10% OFF na primeira compra
             </h3>
             <p className="mt-2 max-w-md text-sm text-black/70">
-              Get early access to drops, limited offers and curated jewelry picks.
+              Acesso antecipado aos lançamentos, ofertas limitadas e curadoria de joias.
             </p>
 
             <form
@@ -23,7 +23,7 @@ export default function Footer() {
               <input
                 type="email"
                 required
-                placeholder="Enter your email"
+                placeholder="Digite seu e-mail"
                 className="h-11 flex-1 border border-black/15 bg-white px-4 text-sm outline-none placeholder:text-black/40 focus:border-black"
               />
               <motion.button
@@ -32,34 +32,34 @@ export default function Footer() {
                 type="submit"
                 className="h-11 border border-black bg-black px-5 text-xs font-semibold uppercase tracking-wide text-white"
               >
-                Subscribe
+                Quero receber
               </motion.button>
             </form>
           </div>
 
           <div className="md:col-span-2">
             <h4 className="text-xs font-semibold uppercase tracking-wide text-black/80">
-              Best Shop
+              Loja
             </h4>
             <ul className="mt-4 space-y-2 text-sm text-black/70">
               <li>
                 <Link href="/" className="hover:text-black">
-                  New Arrivals
+                  Novidades
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-black">
-                  Best Seller
+                  Mais vendidos
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-black">
-                  Deals & Offers
+                  Ofertas
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-black">
-                  Gift Cards
+                  Vale-presente
                 </Link>
               </li>
             </ul>
@@ -67,27 +67,27 @@ export default function Footer() {
 
           <div className="md:col-span-2">
             <h4 className="text-xs font-semibold uppercase tracking-wide text-black/80">
-              Information
+              Informações
             </h4>
             <ul className="mt-4 space-y-2 text-sm text-black/70">
               <li>
                 <Link href="/" className="hover:text-black">
-                  About Us
+                  Sobre a LUME
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-black">
-                  Shipping Policy
+                  Política de envio
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-black">
-                  Returns & Refunds
+                  Trocas e devoluções
                 </Link>
               </li>
               <li>
                 <Link href="/" className="hover:text-black">
-                  Contact
+                  Fale com a gente
                 </Link>
               </li>
             </ul>
@@ -95,11 +95,11 @@ export default function Footer() {
 
           <div className="md:col-span-3">
             <h4 className="text-xs font-semibold uppercase tracking-wide text-black/80">
-              Contact Us
+              Atendimento
             </h4>
             <div className="mt-4 text-sm text-black/70">
               <p>+1 (212) 555-0104</p>
-              <p className="mt-1">support@joker-jewelry.com</p>
+              <p className="mt-1">suporte@lume-joias.com</p>
 
               <div className="mt-4 flex items-center gap-2">
                 <SocialButton label="Facebook" />
@@ -112,8 +112,8 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-black/10 pt-6 text-xs text-black/60 md:flex-row md:items-center">
-          <p>© {new Date().getFullYear()} JOKER. All rights reserved.</p>
-          <p className="tracking-wide">Secure checkout • Premium quality • Minimal design</p>
+          <p>© {new Date().getFullYear()} LUME. Todos os direitos reservados.</p>
+          <p className="tracking-wide">Checkout seguro • Qualidade premium • Design minimalista</p>
         </div>
       </div>
     </footer>

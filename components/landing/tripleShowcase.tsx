@@ -24,7 +24,7 @@ export default function TripleShowcase({ data }: TripleShowcaseProps) {
           <div className="aspect-[4/5] md:aspect-[4/6]">
             <img
               src={data.leftImageUrl}
-              alt="Jewelry showcase left"
+              alt="Joias em destaque à esquerda"
               className="h-full w-full object-cover"
               loading="lazy"
               decoding="async"
@@ -47,7 +47,6 @@ export default function TripleShowcase({ data }: TripleShowcaseProps) {
                 decoding="async"
               />
 
-              {/* Ações rápidas também aqui */}
               <ProductActions
                 item={{
                   id: data.centerCard.id,
@@ -85,7 +84,7 @@ export default function TripleShowcase({ data }: TripleShowcaseProps) {
           <div className="aspect-[4/5] md:aspect-[4/6]">
             <img
               src={data.rightImageUrl}
-              alt="Jewelry showcase right"
+              alt="Joias em destaque à direita"
               className="h-full w-full object-cover"
               loading="lazy"
               decoding="async"

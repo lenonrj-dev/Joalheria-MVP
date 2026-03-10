@@ -21,7 +21,7 @@ export default function Hero({ data }: HeroProps) {
         <div className="relative h-[360px] w-full md:h-[520px]">
           <img
             src={data.imageUrl}
-            alt="Jewelry hero banner"
+            alt="Banner principal de joias"
             className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"
             decoding="async"

@@ -19,10 +19,10 @@ export default function OfferStrip({ categories }: OfferStripProps) {
         className="text-center"
       >
         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-black/60">
-          Until The Offer Expiring
+          Oferta por tempo limitado
         </p>
         <h2 className="mt-2 text-2xl font-semibold tracking-tight text-black md:text-3xl">
-          50% OFF All Items
+          Até 50% OFF em selecionados
         </h2>
 
         <div className="mt-5 flex flex-wrap items-center justify-center gap-x-8 gap-y-3">

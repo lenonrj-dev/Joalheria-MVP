@@ -32,7 +32,7 @@ export default function ProductActions({
           toggleFavorite(product);
           openFavorites();
         }}
-        aria-label={liked ? "Remove from favorites" : "Add to favorites"}
+        aria-label={liked ? "Remover dos favoritos" : "Adicionar aos favoritos"}
         className={`grid h-9 w-9 place-items-center border bg-white shadow-sm transition-colors ${
           liked ? "border-[var(--wine)]" : "border-black/15 hover:border-black"
         }`}
@@ -48,7 +48,7 @@ export default function ProductActions({
           addToCart(product, 1);
           openCart();
         }}
-        aria-label="Add to cart"
+        aria-label="Adicionar ao carrinho"
         className="grid h-9 w-9 place-items-center border border-black/15 bg-white shadow-sm hover:border-black"
       >
         <PlusIcon />

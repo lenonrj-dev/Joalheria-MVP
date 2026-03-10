@@ -20,13 +20,13 @@ export default function Header({ links }: HeaderProps) {
           <Link
             href="/"
             className="select-none text-lg font-semibold tracking-[0.22em]"
-            aria-label="JOKER Home"
+            aria-label="LUME — Página inicial"
           >
-            JOKER
+            LUME
           </Link>
         </div>
 
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Primary">
+        <nav className="hidden items-center gap-8 md:flex" aria-label="Principal">
           {links.map((l) => (
             <Link
               key={l.label}
@@ -39,18 +39,18 @@ export default function Header({ links }: HeaderProps) {
         </nav>
 
         <div className="flex items-center gap-3">
-          <IconButton label="Search">
+          <IconButton label="Buscar">
             <IconSearch />
           </IconButton>
 
-          <IconButton label="Account" className="hidden sm:inline-flex">
+          <IconButton label="Conta" className="hidden sm:inline-flex">
             <IconUser />
           </IconButton>
 
           <motion.button
             type="button"
             onClick={openFavorites}
-            aria-label="Wishlist"
+            aria-label="Favoritos"
             whileHover={{ y: -1 }}
             whileTap={{ scale: 0.98 }}
             className="relative inline-flex h-9 w-9 items-center justify-center border border-black/10 bg-white hover:border-black/20"
@@ -66,13 +66,13 @@ export default function Header({ links }: HeaderProps) {
           <motion.button
             type="button"
             onClick={openCart}
-            aria-label="Cart"
+            aria-label="Carrinho"
             whileHover={{ y: -1 }}
             whileTap={{ scale: 0.98 }}
             className="relative inline-flex h-9 items-center gap-2 border border-black/10 bg-white px-3 text-xs font-semibold uppercase tracking-wide text-black hover:border-black/20"
           >
             <IconCart />
-            <span className="hidden md:inline">Cart</span>
+            <span className="hidden md:inline">Carrinho</span>
             <span className="grid h-5 w-5 place-items-center rounded-full bg-black text-[10px] font-bold text-white">
               {cartCount}
             </span>

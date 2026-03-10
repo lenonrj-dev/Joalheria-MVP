@@ -115,16 +115,15 @@ export default function ShopProvider({ children }: { children: React.ReactNode }
 
   const getWhatsAppText = useCallback(() => {
     if (cart.length === 0) {
-      return "Hello! I'd like to know more about your jewelry.";
+      return "Olá! Quero saber mais sobre as joias da LUME.";
     }
 
-    const lines = cart.map(
-      (it) => `• ${it.qty}x ${it.title} — ${it.price}`
-    );
+    const lines = cart.map((it) => `• ${it.qty}x ${it.title} — ${it.price}`);
 
-    const total = cartSubtotal > 0 ? `\n\nSubtotal: $${cartSubtotal.toFixed(2)}` : "";
+    const total =
+      cartSubtotal > 0 ? `\n\nSubtotal: $${cartSubtotal.toFixed(2)}` : "";
 
-    return `Hello! I want to buy these items:\n\n${lines.join("\n")}${total}`;
+    return `Olá! Quero comprar estes itens:\n\n${lines.join("\n")}${total}`;
   }, [cart, cartSubtotal]);
 
   const checkoutWhatsApp = useCallback(() => {

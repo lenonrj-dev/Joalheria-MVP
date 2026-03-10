@@ -25,18 +25,20 @@ export default function CartDrawer() {
     <DrawerShell
       open={isOpen}
       onClose={closeDrawer}
-      title="Your Cart"
+      title="Seu carrinho"
       subtitle={
         cartCount > 0
-          ? `${cartCount} item${cartCount > 1 ? "s" : ""} selected`
-          : "Add products and checkout instantly"
+          ? `${cartCount} item${cartCount > 1 ? "s" : ""} selecionado${
+              cartCount > 1 ? "s" : ""
+            }`
+          : "Adicione peças e finalize em 1 clique"
       }
     >
       {cart.length === 0 ? (
         <div className="rounded-xl border border-black/10 bg-black/[0.02] p-5">
-          <p className="text-sm font-semibold text-black">Your cart is empty</p>
+          <p className="text-sm font-semibold text-black">Seu carrinho está vazio</p>
           <p className="mt-1 text-sm text-black/60">
-            Pick your favorite pieces and finish on WhatsApp with one click.
+            Escolha suas peças e finalize no WhatsApp com rapidez.
           </p>
         </div>
       ) : (
@@ -76,7 +78,7 @@ export default function CartDrawer() {
                     onClick={() => removeFromCart(it.id)}
                     className="text-xs font-semibold uppercase tracking-wide text-black/50 hover:text-black"
                   >
-                    Remove
+                    Remover
                   </button>
                 </div>
               </div>
@@ -92,7 +94,7 @@ export default function CartDrawer() {
             </div>
 
             <p className="mt-2 text-xs text-black/50">
-              This cart is temporary (refresh clears it). Perfect for “buy now” flow.
+              Carrinho temporário (atualizar a página limpa). Ideal para compra rápida.
             </p>
 
             <div className="mt-4 grid gap-2">
@@ -103,7 +105,7 @@ export default function CartDrawer() {
                 onClick={checkoutWhatsApp}
                 className="h-11 w-full border border-black bg-black px-5 text-xs font-semibold uppercase tracking-wide text-white"
               >
-                Buy on WhatsApp
+                Comprar no WhatsApp
               </motion.button>
 
               <div className="grid grid-cols-2 gap-2">
@@ -114,7 +116,7 @@ export default function CartDrawer() {
                   onClick={() => void copyCartText()}
                   className="h-11 border border-black/15 bg-white px-5 text-xs font-semibold uppercase tracking-wide text-black hover:border-black"
                 >
-                  Save List
+                  Salvar lista
                 </motion.button>
 
                 <motion.button
@@ -124,7 +126,7 @@ export default function CartDrawer() {
                   onClick={clearCart}
                   className="h-11 border border-black/15 bg-white px-5 text-xs font-semibold uppercase tracking-wide text-black hover:border-black"
                 >
-                  Clear
+                  Limpar
                 </motion.button>
               </div>
             </div>
@@ -150,7 +152,7 @@ function QtyControl({
         type="button"
         onClick={onMinus}
         className="grid h-9 w-9 place-items-center text-black hover:bg-black/[0.03]"
-        aria-label="Decrease"
+        aria-label="Diminuir"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path
@@ -168,7 +170,7 @@ function QtyControl({
         type="button"
         onClick={onPlus}
         className="grid h-9 w-9 place-items-center text-black hover:bg-black/[0.03]"
-        aria-label="Increase"
+        aria-label="Aumentar"
       >
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
           <path

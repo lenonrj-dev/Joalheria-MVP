@@ -18,12 +18,11 @@ export default function EditorialDuo({ data }: EditorialDuoProps) {
         transition={{ duration: 0.45, ease: "easeOut" }}
         className="grid grid-cols-1 gap-4 md:grid-cols-12"
       >
-        {/* Left collage */}
         <div className="relative overflow-hidden border border-black/10 md:col-span-7">
           <div className="relative aspect-[7/4] md:aspect-[7/4]">
             <img
               src={data.collage.baseImageUrl}
-              alt="Jewelry lifestyle"
+              alt="Joias em lifestyle"
               className="absolute inset-0 h-full w-full object-cover"
               loading="lazy"
               decoding="async"
@@ -55,7 +54,7 @@ export default function EditorialDuo({ data }: EditorialDuoProps) {
               <div className="aspect-[1/1] bg-black/[0.03]">
                 <img
                   src={data.collage.floatingImageUrl}
-                  alt="Detail"
+                  alt="Detalhe da peça"
                   className="h-full w-full object-cover"
                   loading="lazy"
                   decoding="async"
@@ -65,12 +64,11 @@ export default function EditorialDuo({ data }: EditorialDuoProps) {
           </div>
         </div>
 
-        {/* Right portrait */}
         <div className="relative overflow-hidden border border-black/10 md:col-span-5">
           <div className="aspect-[4/5] md:aspect-[5/6]">
             <img
               src={data.portraitImageUrl}
-              alt="Model portrait"
+              alt="Editorial premium"
               className="h-full w-full object-cover"
               loading="lazy"
               decoding="async"

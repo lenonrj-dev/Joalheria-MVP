@@ -131,28 +131,28 @@ export type PartnerLogoItem = {
 export const WHATSAPP_SHARE_BASE = "https://wa.me/?text=";
 
 export const navLinks: NavLink[] = [
-  { label: "Home", href: "/" },
-  { label: "Shop", href: "/" },
-  { label: "Collection", href: "/" },
+  { label: "Início", href: "/" },
+  { label: "Loja", href: "/" },
+  { label: "Coleções", href: "/" },
   { label: "Blog", href: "/" },
-  { label: "About", href: "/" },
+  { label: "Sobre", href: "/" },
 ];
 
 export const categories: CategoryLink[] = [
-  { label: "Rings", href: "/" },
-  { label: "Earrings", href: "/" },
-  { label: "Necklaces", href: "/" },
-  { label: "Bracelets", href: "/" },
-  { label: "Bangles", href: "/" },
-  { label: "New Arrivals", href: "/" },
-  { label: "Best Seller", href: "/" },
+  { label: "Anéis", href: "/" },
+  { label: "Brincos", href: "/" },
+  { label: "Colares", href: "/" },
+  { label: "Pulseiras", href: "/" },
+  { label: "Braceletes", href: "/" },
+  { label: "Novidades", href: "/" },
+  { label: "Mais vendidos", href: "/" },
 ];
 
 export const heroData: HeroData = {
-  eyebrow: "Shine Bright With",
-  titleLine1: "Shine Bright With",
-  titleLine2: "Sustainably Jewelry",
-  ctaLabel: "SHOP NOW",
+  eyebrow: "Brilhe com elegância",
+  titleLine1: "Joias minimalistas",
+  titleLine2: "feitas para durar",
+  ctaLabel: "VER COLEÇÃO",
   ctaHref: "/",
   imageUrl:
     "https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1800&q=80",
@@ -161,7 +161,7 @@ export const heroData: HeroData = {
 export const mosaicData: MosaicData = {
   leftTopA: {
     id: "mosaic-rings",
-    label: "Rings",
+    label: "Anéis",
     discount: "-30%",
     price: "$39.00",
     href: "/",
@@ -170,7 +170,7 @@ export const mosaicData: MosaicData = {
   },
   leftTopB: {
     id: "mosaic-bracelet",
-    label: "Bracelet",
+    label: "Pulseiras",
     discount: "-20%",
     price: "$29.00",
     href: "/",
@@ -179,7 +179,7 @@ export const mosaicData: MosaicData = {
   },
   leftBottom: {
     id: "mosaic-love",
-    label: "Love",
+    label: "Presentes",
     discount: "-15%",
     price: "$49.00",
     href: "/",
@@ -188,7 +188,7 @@ export const mosaicData: MosaicData = {
   },
   centerTall: {
     id: "mosaic-chain",
-    label: "Chain",
+    label: "Colares",
     discount: "-40%",
     price: "$59.00",
     href: "/",
@@ -197,7 +197,7 @@ export const mosaicData: MosaicData = {
   },
   rightTop: {
     id: "mosaic-bangles",
-    label: "Bangles",
+    label: "Braceletes",
     discount: "-25%",
     price: "$55.00",
     href: "/",
@@ -206,7 +206,7 @@ export const mosaicData: MosaicData = {
   },
   rightBottomA: {
     id: "mosaic-necklace",
-    label: "Necklace",
+    label: "Colares",
     discount: "-10%",
     price: "$69.00",
     href: "/",
@@ -215,7 +215,7 @@ export const mosaicData: MosaicData = {
   },
   rightBottomB: {
     id: "mosaic-accessories",
-    label: "Accessories",
+    label: "Acessórios",
     discount: "-18%",
     price: "$24.00",
     href: "/",
@@ -231,24 +231,24 @@ export const tripleShowcaseData: TripleShowcaseData = {
     "https://images.unsplash.com/photo-1520975958221-562b4b6fd5d3?auto=format&fit=crop&w=1400&q=80",
   centerCard: {
     id: "triple-minimal-earrings",
-    eyebrow: "Best pick",
-    title: "Minimal Drop Earrings",
+    eyebrow: "Escolha do momento",
+    title: "Brincos Gota Minimalistas",
     price: "$49.00",
     imageUrl:
       "https://images.unsplash.com/photo-1512499617640-c2f999fe6b8a?auto=format&fit=crop&w=1000&q=80",
-    ctaLabel: "SHOP NOW",
+    ctaLabel: "COMPRAR AGORA",
     ctaHref: "/",
   },
 };
 
 export const productRowData: ProductsRowData = {
-  eyebrow: "Big Sale 10% Off",
-  title: "We love The Jewelry For You All Brand",
+  eyebrow: "Semana de ofertas • 10% OFF",
+  title: "Joias essenciais para o seu dia a dia",
   items: [
     {
       id: "row-silver-loop-bracelet",
       badge: "New",
-      title: "Silver Loop Bracelet",
+      title: "Pulseira Loop Prateada",
       price: "$29.00",
       href: "/",
       imageUrl:
@@ -257,7 +257,7 @@ export const productRowData: ProductsRowData = {
     {
       id: "row-golden-chain-necklace",
       badge: "Hot",
-      title: "Golden Chain Necklace",
+      title: "Colar Corrente Dourada",
       price: "$59.00",
       href: "/",
       imageUrl:
@@ -266,7 +266,7 @@ export const productRowData: ProductsRowData = {
     {
       id: "row-minimal-hoop-earrings",
       badge: "New",
-      title: "Minimal Hoop Earrings",
+      title: "Brincos Argola Minimal",
       price: "$39.00",
       href: "/",
       imageUrl:
@@ -275,7 +275,7 @@ export const productRowData: ProductsRowData = {
     {
       id: "row-stackable-rings-set",
       badge: "Hot",
-      title: "Stackable Rings Set",
+      title: "Kit de Anéis Empilháveis",
       price: "$45.00",
       href: "/",
       imageUrl:
@@ -290,21 +290,21 @@ export const editorialDuoData: EditorialDuoData = {
       "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1400&q=80",
     floatingImageUrl:
       "https://images.unsplash.com/photo-1603570419986-3c3a1d5931f6?auto=format&fit=crop&w=1200&q=80",
-    cardTitle: "Jewelry",
+    cardTitle: "Nova curadoria",
     cardText:
-      "Jewelry That Boosts Up Your Events And Gets You Ready For The Day",
-    ctaLabel: "SHOP NOW",
+      "Peças que elevam o seu look e acompanham você em todos os momentos.",
+    ctaLabel: "VER DESTAQUES",
     ctaHref: "/",
   },
   portraitImageUrl:
     "https://images.unsplash.com/photo-1520975682031-a83e1e38d2bb?auto=format&fit=crop&w=1600&q=80",
 };
 
-export const discountBannerData = {
+export const discountBannerData: DiscountBannerData = {
   bigText: "20% OFF",
-  title: "Limited Time Offer Only",
-  subtitle: "On Selected Items",
-  ctaLabel: "SHOP NOW",
+  title: "Oferta por tempo limitado",
+  subtitle: "Em itens selecionados",
+  ctaLabel: "APROVEITAR AGORA",
   ctaHref: "/",
 };
 
@@ -312,28 +312,28 @@ export const promoBannersData: PromoBannersData = {
   left: {
     imageUrl:
       "https://images.unsplash.com/photo-1520975958221-562b4b6fd5d3?auto=format&fit=crop&w=1600&q=80",
-    eyebrow: "Jewelry For You",
-    title: "Jewelry That Boosts Up Your Events",
-    subtitle: "Make your day shine with clean minimal pieces.",
-    ctaLabel: "SHOP NOW",
+    eyebrow: "Para você",
+    title: "Joias que valorizam seu estilo",
+    subtitle: "Minimalistas, sofisticadas e fáceis de combinar.",
+    ctaLabel: "EXPLORAR",
     ctaHref: "/",
   },
   rightTop: {
     imageUrl:
       "https://images.unsplash.com/photo-1535632787350-4e68ef7a040e?auto=format&fit=crop&w=1600&q=80",
-    eyebrow: "Special Offer",
-    title: "Enjoy The Discount Up To 30%",
-    subtitle: "On your favorite essentials.",
-    ctaLabel: "SHOP NOW",
+    eyebrow: "Oferta especial",
+    title: "Descontos de até 30%",
+    subtitle: "Nas peças favoritas do momento.",
+    ctaLabel: "VER OFERTAS",
     ctaHref: "/",
   },
   rightBottom: {
     imageUrl:
       "https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1600&q=80",
-    eyebrow: "Friends & Family Event",
-    title: "40% OFF On Selected Items",
-    subtitle: "Limited time only.",
-    ctaLabel: "SHOP NOW",
+    eyebrow: "Edição limitada",
+    title: "40% OFF em selecionados",
+    subtitle: "Enquanto durarem os estoques.",
+    ctaLabel: "GARANTIR AGORA",
     ctaHref: "/",
   },
 };
@@ -341,34 +341,34 @@ export const promoBannersData: PromoBannersData = {
 export const features: FeatureItem[] = [
   {
     icon: "truck",
-    title: "Free Shipping",
-    description: "On all orders over $49",
+    title: "Frete grátis",
+    description: "Em pedidos acima de $49",
   },
   {
     icon: "support",
-    title: "Support 24/7",
-    description: "Friendly customer care",
+    title: "Suporte 24/7",
+    description: "Atendimento rápido e humano",
   },
   {
     icon: "refund",
-    title: "Money Return",
-    description: "30 days guarantee",
+    title: "Troca fácil",
+    description: "Garantia de 30 dias",
   },
   {
     icon: "discount",
-    title: "Order Discount",
-    description: "Exclusive member deals",
+    title: "Ofertas exclusivas",
+    description: "Vantagens para membros",
   },
 ];
 
 export const brandStrip: BrandStripData = {
-  title: "Trusted Brands",
-  subtitle: "Crafted with care. Loved worldwide.",
+  title: "Marcas que inspiram",
+  subtitle: "Curadoria cuidadosa. Qualidade em cada detalhe.",
   brands: [
-    { name: "ZARA", note: "Curated essentials" },
-    { name: "LVMH", note: "Luxury heritage" },
-    { name: "GQ", note: "Style picks" },
-    { name: "Benefit", note: "Beauty & shine" },
+    { name: "ZARA", note: "Essenciais curados" },
+    { name: "LVMH", note: "Herança de luxo" },
+    { name: "GQ", note: "Seleção de estilo" },
+    { name: "Benefit", note: "Beleza & brilho" },
   ],
 };
 
@@ -376,7 +376,7 @@ const tabItemsBase: ProductCard[] = [
   {
     id: "tab-pearl-necklace",
     badge: "New",
-    title: "Pearl Minimal Necklace",
+    title: "Colar Pérola Minimal",
     price: "$69.00",
     href: "/",
     imageUrl:
@@ -385,7 +385,7 @@ const tabItemsBase: ProductCard[] = [
   {
     id: "tab-gold-bangles",
     badge: "Hot",
-    title: "Gold Thin Bangles",
+    title: "Braceletes Dourados Finos",
     price: "$55.00",
     href: "/",
     imageUrl:
@@ -394,7 +394,7 @@ const tabItemsBase: ProductCard[] = [
   {
     id: "tab-silver-drop-earrings",
     badge: "New",
-    title: "Silver Drop Earrings",
+    title: "Brincos Gota Prateados",
     price: "$44.00",
     href: "/",
     imageUrl:
@@ -403,7 +403,7 @@ const tabItemsBase: ProductCard[] = [
   {
     id: "tab-stack-rings",
     badge: "Hot",
-    title: "Stack Rings Classic",
+    title: "Anéis Empilháveis Clássicos",
     price: "$49.00",
     href: "/",
     imageUrl:
@@ -412,22 +412,22 @@ const tabItemsBase: ProductCard[] = [
 ];
 
 export const tabbedProductsData: TabbedProductsData = {
-  eyebrow: "We love to see you shine",
-  title: "We wish The Jewelry For You All Brand.",
+  eyebrow: "A gente ama ver você brilhar",
+  title: "Escolha suas peças preferidas",
   tabs: [
-    { key: "featured", label: "Featured", items: tabItemsBase },
+    { key: "featured", label: "Destaques", items: tabItemsBase },
     {
       key: "new",
-      label: "New Arrivals",
+      label: "Novidades",
       items: tabItemsBase.map((p) => ({
         ...p,
         id: `${p.id}-new`,
-        title: p.title.replace("Classic", "Edition"),
+        title: p.title.replace("Clássicos", "Edição"),
       })),
     },
     {
       key: "best",
-      label: "Best Seller",
+      label: "Mais vendidos",
       items: tabItemsBase.map((p) => ({
         ...p,
         id: `${p.id}-best`,
@@ -438,8 +438,8 @@ export const tabbedProductsData: TabbedProductsData = {
 
 export const instagramData: InstagramData = {
   eyebrow: "INSTAGRAM",
-  title: "Share Your Latest Look",
-  subtitle: "Tag your photos with #JokerJewelry",
+  title: "Inspire seu próximo look",
+  subtitle: "Marque suas fotos com #LumeJoias",
   images: [
     {
       href: "/",

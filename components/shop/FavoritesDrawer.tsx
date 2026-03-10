@@ -21,18 +21,18 @@ export default function FavoritesDrawer() {
     <DrawerShell
       open={isOpen}
       onClose={closeDrawer}
-      title="Favorites"
+      title="Favoritos"
       subtitle={
         favoritesCount > 0
-          ? `${favoritesCount} saved item${favoritesCount > 1 ? "s" : ""}`
-          : "Save your favorite pieces"
+          ? `${favoritesCount} item salvo${favoritesCount > 1 ? "s" : ""}`
+          : "Salve suas peças preferidas"
       }
     >
       {favorites.length === 0 ? (
         <div className="rounded-xl border border-black/10 bg-black/[0.02] p-5">
-          <p className="text-sm font-semibold text-black">No favorites yet</p>
+          <p className="text-sm font-semibold text-black">Nenhum favorito ainda</p>
           <p className="mt-1 text-sm text-black/60">
-            Tap the heart on products to save them for later.
+            Toque no coração para salvar e comparar depois.
           </p>
         </div>
       ) : (
@@ -68,7 +68,7 @@ export default function FavoritesDrawer() {
                     onClick={() => addToCart(it, 1)}
                     className="h-9 border border-black bg-black px-3 text-xs font-semibold uppercase tracking-wide text-white"
                   >
-                    Add to cart
+                    Adicionar
                   </motion.button>
 
                   <button
@@ -76,7 +76,7 @@ export default function FavoritesDrawer() {
                     onClick={() => toggleFavorite(it)}
                     className="text-xs font-semibold uppercase tracking-wide text-black/50 hover:text-black"
                   >
-                    Remove
+                    Remover
                   </button>
                 </div>
               </div>

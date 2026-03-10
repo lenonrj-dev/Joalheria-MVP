@@ -23,7 +23,7 @@ export default function DrawerShell({
         <>
           <motion.button
             type="button"
-            aria-label="Close drawer"
+            aria-label="Fechar painel"
             onClick={onClose}
             className="fixed inset-0 z-[90] cursor-pointer bg-black/40 backdrop-blur-[2px]"
             initial={{ opacity: 0 }}
@@ -53,7 +53,7 @@ export default function DrawerShell({
                   type="button"
                   onClick={onClose}
                   className="grid h-9 w-9 place-items-center border border-black/10 bg-white text-black hover:border-black/20"
-                  aria-label="Close"
+                  aria-label="Fechar"
                 >
                   <svg
                     width="18"

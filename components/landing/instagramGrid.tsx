@@ -33,11 +33,11 @@ export default function InstagramGrid({ data }: InstagramGridProps) {
               <Link
                 href={img.href}
                 className="relative block aspect-square overflow-hidden border border-black/10 bg-white"
-                aria-label={`Instagram image ${idx + 1}`}
+                aria-label={`Imagem do Instagram ${idx + 1}`}
               >
                 <img
                   src={img.imageUrl}
-                  alt="Instagram post"
+                  alt="Post do Instagram"
                   className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.05]"
                   loading="lazy"
                   decoding="async"
